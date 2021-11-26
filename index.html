@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>A Basic Calculator</h1>
+	<hr>
+		<div id="container">
+			<form name="calc">
+				<div>
+					<input type="text" name="output" placeholder="0">
+				</div>
+				<div>
+					<input type="button" name="1" value=" 1" class="left_most" onclick="ent('1')">
+					<input type="button" name="2" value=" 2" onclick="ent('2')">
+					<input type="button" name="3" value=" 3" onclick="ent('3')">
+					<input type="button" name="/" value=" /" onclick="ent('/')">
+				</div>
+				<div>
+					<input type="button" name="4" value=" 4" class="left_most" onclick="ent('4')">
+					<input type="button" name="5" value=" 5" onclick="ent('5')">
+					<input type="button" name="6" value=" 6" onclick="ent('6')">
+					<input type="button" name="*" value=" x" onclick="ent('*')">
+				</div>
+				<div>
+					<input type="button" name="7" value=" 7" class="left_most" onclick="ent('7')">
+					<input type="button" name="8" value=" 8" onclick="ent('8')">
+					<input type="button" name="9" value=" 9" onclick="ent('9')">
+					<input type="button" name="-" value=" -" onclick="ent('-')">
+				</div>
+				<div>
+					<input type="button" name="(" value=" (" class="left_most" onclick="ent('(')">
+					<input type="button" name=")" value=" )" onclick="ent(')')">
+					<input type="button" name="0" value=" 0" onclick="ent('0')">
+					<input type="button" name="+" value=" +" onclick="ent('+')">
+				</div>
+				<div>
+					<input type="button" name="c" value=" c" class="left_most" onclick="erase()">
+					<input type="button" name="." value=" ." onclick="ent('.')">
+					<input type="button" name="=" value=" ="
+						 onclick="calculate()">
+					<input type="button" name="%" value=" %" onclick="ent('%')">
+				</div>
+				<br>
+			</form>
+		</div>
+
+	<hr>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
